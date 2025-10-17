@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    /*font-family: 'Poppins', sans-serif !important;*/
+    font-family: "Lora", serif;
+    color: #6B4F4F
+}
+
+.navbar {
+    font-family: "Playfair Display", serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    
+}
+
+.navbar {
+    color: #F8F3E7;
+    background-color: #3e2310;
+
+}
+
+.navbar-nav {
+    
+    margin-right: 30px;
+}
+
+.navbar-nav .nav-link {
+    letter-spacing: 2px;
+    color: #F8F3E7;
+    font-size: 1.4rem;
+    margin-right: 40px;
+
+}
+
+.navbar-nav .nav-link:hover {
+    color: #aeaa9f
+}
+
+.nav-logo{
+    display: flex;
+    
+}
+
+.nav-logo img {
+    height: 2rem;
+
+}
+
