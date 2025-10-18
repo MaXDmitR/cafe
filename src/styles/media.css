@@ -1,0 +1,48 @@
+/* Media Query: Для екранів менше 992px (стандартна точка перелому Bootstrap для навбару) */
+@media (max-width: 991px) {
+    
+    /* Зробіть сам навбар трохи вищим, щоб дати простір елементам */
+    .navbar {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    /* Збільште розмір іконки логотипу */
+    .nav-logo img {
+        height: 3rem; /* Збільште до 3rem для кращої видимості */
+    }
+
+    /* Збільште відступи та розмір шрифту кнопок у випадаючому меню */
+    .navbar-nav .nav-link {
+        font-size: 1.2rem; /* Або навіть 1.5rem, щоб заповнити простір */
+        margin-right: 0; /* Приберіть відступ справа у мобільному меню */
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center; /* Центруйте текст у мобільному меню */
+    }
+
+    /* Стилі для кнопки перемикача (toggler) */
+    .navbar-toggler {
+        /* Додайте відступ, якщо він прилипає до краю */
+        padding: 5px;
+    }
+}
+
+
+@media (max-width: 767px) {
+  .carousel-caption h5 {
+    font-size: 1.8rem; /* менший заголовок */
+  }
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+  .carousel-caption {
+    top: 45%;
+    transform: translate(-10%, -45%);
+    text-align: center;
+  }
+
+
+}
+
+

@@ -5,7 +5,7 @@ const Logo = () => {
   return (
     <div className='nav-logo'>
       <img src='images/logo.jpg' alt="AromaPlace Logo" />
-      <div>AromaPlace</div>
+      <h3>AromaPlace</h3>
     </div>
   )
 }

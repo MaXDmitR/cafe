@@ -6,7 +6,7 @@ const NavButton = (props) => {
         <li className="nav-item">
             <NavLink
                 to={props.link}
-                className={({ isActive }) => "nav-link " + (isActive ? "text-secondary" : "")}
+                className={({ isActive }) => "nav-link " + (isActive ? "choosen text-secondary" : "")}
             >
                 {props.name}
             </NavLink>
