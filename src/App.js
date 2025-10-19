@@ -8,7 +8,15 @@ import './styles/media.css';
 
 //компоненти
 import NavBar from "./components/NavBar/NavBar";
-import Hero from "./components/Hero/Carousel"
+
+
+//сторінки
+import Home from "./pages/Home.jsx";
+import Story from "./pages/Story.jsx";
+import Menu from "./pages/Menu.jsx";
+import Gallery from "./pages/Gallery.jsx";
+import Contact from "./pages/Contact.jsx";
+
 
 
 function App() {
@@ -23,7 +31,14 @@ function App() {
           { name: "CONTACT US", link: "/contact" }
         ]}
         ></NavBar>
-        <Hero></Hero>
+        
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/story" element={<Story />} />
+          <Route path="/menu" element={<Menu />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
       </div>
     </BrowserRouter>
   );

@@ -15,7 +15,7 @@
     /* Збільште відступи та розмір шрифту кнопок у випадаючому меню */
     .navbar-nav .nav-link {
         font-size: 1.2rem; /* Або навіть 1.5rem, щоб заповнити простір */
-        margin-right: 0; /* Приберіть відступ справа у мобільному меню */
+        margin-right: 0; 
         padding-top: 10px;
         padding-bottom: 10px;
         text-align: center; /* Центруйте текст у мобільному меню */
@@ -42,7 +42,49 @@
     text-align: center;
   }
 
-
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
 }
 
 
+@media (max-width: 1279px) {
+
+    .aboutSection {
+        height: auto;
+    }
+
+    .story-block {
+        padding: 30px 0;
+    }
+
+    .story-image,
+    .story-content {
+        width: 100%;
+        /* На мобільних: зображення і текст займають всю ширину */
+    }
+
+    .story-image {
+        height: 250px;
+        /* Зменшуємо висоту зображення на мобільних */
+        margin: 0;
+    }
+
+    .story-content {
+        padding: 30px 20px;
+    }
+
+    .story-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .story-content p {
+        font-size: 1.2rem;
+    }
+}
