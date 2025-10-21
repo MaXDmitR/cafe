@@ -1,11 +1,11 @@
 import React from 'react'
-
+import ReadMoreButton from './ReadMoreButton'
 
 const AboutUs = () => {
     return (
         <div className='aboutSection'>
             <div className="about-container">
-                <section className="about-block about-block-image-right">
+                <section className="about-block">
                     <div
                         className="about-image"
                         style={{ backgroundImage: "url('images/aboutUs.jpg')" }}
@@ -27,12 +27,12 @@ const AboutUs = () => {
 
                         <p>There is always something fresh to <strong>enjoy</strong>. Whether it's our signature espresso drinks or a cosy cup of tea, we guarantee you'll leave satisfied.</p>
 
-
+                        <ReadMoreButton></ReadMoreButton>
                         <blockquote class="about-quote">
                             “We don’t just serve coffee — we serve warmth, inspiration and connection.”
                             <span>– The AromaPlace Family</span>
                         </blockquote>
-
+                        
                     </div>
 
                 </section>

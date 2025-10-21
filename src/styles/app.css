@@ -98,7 +98,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-5%, -55%);
+    transform: translate(-5%, -85%);
     color: white;
     max-width: 500px;
     text-align: left;
@@ -150,16 +150,12 @@ body {
     padding-bottom: 50px;
 }
 
-/* 1. Блок з зображенням і текстом */
-.about-block-image-right {}
+
 
 .about-image {
     margin-left: 5%;
-
     width: 40%;
-    /* Розподіл 50/50 */
-    height: 90vh;
-    /* Фіксована висота для фонового зображення */
+    height: 100vh;
     background-position: center;
     background-size: cover;
     border-radius: 5%;
@@ -203,6 +199,7 @@ body {
   padding-left: 20px;
   margin-top: 40px;
 }
+
 .about-quote span {
   display: block;
   margin-top: 10px;
