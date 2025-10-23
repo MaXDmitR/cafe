@@ -1,6 +1,6 @@
 //бібліотеки
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, BrowserRouter, Routes, Route } from "react-router-dom";
 
 //стилі
 import './styles/app.css';
@@ -21,7 +21,7 @@ import Contact from "./pages/Contact.jsx";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="App">
         <NavBar buttons={[
           { name: 'HOME', link: "/" },
@@ -32,15 +32,16 @@ function App() {
         ]}
         ></NavBar>
         
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/story" element={<Story />} />
-          <Route path="/menu" element={<Menu />} />
-          <Route path="/gallery" element={<Gallery />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/story" element={<Story />} />
+            <Route path="/menu" element={<Menu />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
