@@ -1,0 +1,144 @@
+[
+  {
+    "id": "americano_classic",
+    "name": "Americano",
+    "category": "Espresso-based",
+    "imageUrl": "images/sales/americano.jpg",
+    "bestDeal": false,
+    "bestDealTitle": "Americano: Pure Coffee Essence",
+    "descriptionSections": [
+      "The classic Americano is a perfect balance of pure taste and refreshing lightness. We combine our signature double espresso with hot (or iced) water to unlock the rich yet smooth profile of our beans. It's a drink that doesn't hide the true flavor of coffee.",
+      "Ideal for those seeking a quick, strong, and clean coffee boost without any added frills. Experience a classic perfected."
+    ],
+    "properties": [
+      {
+        "label": "Main Ingredient",
+        "value": "Espresso"
+      },
+      {
+        "label": "Strength",
+        "value": "Medium"
+      },
+      {
+        "label": "Calories (approx.)",
+        "value": "0 - 5 kcal"
+      },
+      {
+        "label": "Size",
+        "value": "180/250/350 ml"
+      },
+      {
+        "label": "Temperature",
+        "value": "Hot/Iced"
+      }
+    ],
+    "button_text": "Order Now"
+  },
+
+{
+    "id": "americano_classic",
+    "name": "Capuccino",
+    "category": "Espresso-based",
+    "imageUrl": "images/sales/Capuccino.jpg",
+    "bestDeal": true,
+    "bestDealTitle": "Cappuccino: Pure Coffee Essence",
+    "descriptionSections": [
+      "The classic Cappuccino is a perfect balance of pure taste and refreshing lightness. We combine our signature double espresso with hot (or iced) water to unlock the rich yet smooth profile of our beans. It's a drink that doesn't hide the true flavor of coffee.",
+      "Ideal for those seeking a quick, strong, and clean coffee boost without any added frills. Experience a classic perfected."
+    ],
+    "properties": [
+      {
+        "label": "Main Ingredient",
+        "value": "Espresso"
+      },
+      {
+        "label": "Strength",
+        "value": "Low"
+      },
+      {
+        "label": "Calories (approx.)",
+        "value": "0 - 5 kcal"
+      },
+      {
+        "label": "Size",
+        "value": "180/250/350 ml"
+      },
+      {
+        "label": "Temperature",
+        "value": "Hot"
+      }
+    ],
+    "button_text": "Order Now"
+  },
+
+  {
+    "id": "herbal_tea_dream",
+    "name": "Dreamy Garden Herbal Tea",
+    "category": "Hot drinks",
+    "imageUrl": "images/sales/DreamyGardenHerbalTea.jpg",
+    "bestDeal": true,
+    "bestDealTitle": "Dreamy Garden Herbal Tea",
+    "descriptionSections": [
+      "Immerse yourself in tranquility with our 'Dreamy Garden' Herbal Tea. This unique blend of natural herbs like chamomile, mint, and lavender is crafted to soothe your mind and body. Caffeine-free, it's perfect for any time of day.",
+      "Savor its delicate aroma and gentle, soul-warming taste. An ideal choice for unwinding in the evening or a cozy break during your day."
+    ],
+    "properties": [
+      {
+        "label": "Main Ingredient",
+        "value": "Chamomile"
+      },
+      {
+        "label": "Caffeine",
+        "value": "None"
+      },
+      {
+        "label": "Calories (approx.)",
+        "value": "0 kcal"
+      },
+      {
+        "label": "Size",
+        "value": "200/400 ml"
+      },
+      {
+        "label": "Effect",
+        "value": "Relaxing"
+      }
+    ],
+    "button_text": "Taste the Tea"
+  },
+  {
+    "id": "chocolate_brownie",
+    "name": "Chocolate Brownie",
+    "category": "Desserts",
+    "imageUrl": "images/sales/ChocolateBrownie.jpg",
+    "bestDeal": true,
+    "bestDealTitle": "Chocolate Brownie",
+    "descriptionSections": [
+      "Our chocolate brownie is a true celebration for your taste buds. Incredibly moist inside, with a crispy crust and a rich premium chocolate flavor. Baked fresh daily using only the finest ingredients.",
+      "The perfect accompaniment to your coffee or tea. It melts in your mouth, leaving a lingering taste of pure happiness. Try it warm, and you'll fall in love!"
+    ],
+    "properties": [
+      {
+        "label": "Main Ingredient",
+        "value": "Dark chocolate"
+      },
+      {
+        "label": "Gluten-Free",
+        "value": "No "
+      },
+      {
+        "label": "Calories (approx.)",
+        "value": "350 - 450 kcal"
+      },
+      {
+        "label": "Size",
+        "value": "Portion"
+      },
+      {
+        "label": "Pairs Well With",
+        "value": "Coffee/Ice Cream"
+      }
+    ],
+    "button_text": "Order Dessert"
+  }
+]

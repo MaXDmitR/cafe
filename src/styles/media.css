@@ -58,33 +58,95 @@
 
     .aboutSection {
         height: auto;
-    }
-
-    .about-block {
         padding: 30px 0;
     }
 
-    .about-image,
-    .about-content {
+
+    .aboutImage,
+    .aboutContent {
         width: 100%;
+       
         /* На мобільних: зображення і текст займають всю ширину */
     }
 
-    .about-image {
+    .aboutImage {
         height: 250px;
         /* Зменшуємо висоту зображення на мобільних */
         margin: 0;
     }
 
-    .about-content {
+    .aboutContent {
         padding: 30px 20px;
     }
 
-    .about-content h1 {
+    .aboutContent h1 {
         font-size: 2.5rem;
     }
 
-    .about-content p {
+    .aboutContent p {
         font-size: 1.2rem;
+    }
+}
+
+
+/* Media Query: Для екранів менше 768px (Мобільні телефони) */
+@media (max-width: 1279px) {
+    .bestDealSection {
+        padding: 30px 20px; /* Дуже малі відступи */
+    }
+
+    /* Розміщення блоків: вертикальний стовпець */
+    .bestDealtitleBlock {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .bestDealContent {
+        flex-direction: column;
+    }
+    
+    /* Заголовок та кнопки займають повну ширину */
+    .bestDealtitle {
+        width: 100%; 
+        font-size: 2rem;
+       
+    }
+
+    .BestDealCategoryButtons {
+        width: 100%;
+        justify-content: flex-start; /* Вирівнюємо кнопки зліва */
+    }
+    
+    .categoryButton {
+        margin-left: 0;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    /* Блок властивостей */
+    .bestDealProperties {
+        width: 100%; /* Повна ширина */
+        order: 3; /* Розміщуємо після зображення та опису */
+        margin-top: 30px;
+    }
+
+    /* Блок зображення */
+    .bestDealImage {
+        width: 100%;
+        height: 40vh; /* Менша висота для мобільних пристроїв */
+        order: 1; /* Зображення йде першим */
+        margin-bottom: 20px;
+    }
+
+    /* Блок інформації */
+    .bestDealInfo {
+        width: 100%;
+        order: 2; /* Опис йде після зображення */
+        padding-left: 0;
+        margin-bottom: 20px;
+    }
+    
+    .bestDealInfoTitle {
+        font-size: 1.5rem;
     }
 }
