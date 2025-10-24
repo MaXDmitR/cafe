@@ -1,10 +1,13 @@
 import React from 'react'
+import Location from './Location'
+import TitleBlock from './TitleBlock'
 
 const Map = () => {
   return (
-<section className='mapSection'>
-      <h1 className='mapTitle'>Find Our Cafe Location</h1>
-      <h2>In development</h2>
+    <section className='mapSection'>
+      <TitleBlock />
+      <Location />
+      
     </section>
   )
 }

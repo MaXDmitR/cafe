@@ -319,8 +319,51 @@ body {
 
 .mapSection {
     background-color: rgb(248, 231, 196);
-    height: 50vh;
+    height: 70vh;
     width: 100%;
-    padding: 0;
+    padding: 60px 0;
     margin: 0;
 }
+
+.mapTitleBlock {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgb(251, 242, 225);
+    width: 50%;
+    margin: auto ;
+ 
+    border-radius: 50px;
+}
+
+.mapTitle {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #704833;
+}
+
+.mapSubTitle {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #89634E;
+    margin-bottom: 10px;
+}
+
+.mapDescription {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #353535;
+    margin-bottom: 20px;
+}
+
+.mapMap {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* ==================================== */
+/* 6.         ФУТЕР(FOOTER)             */
+/* ==================================== */
+
