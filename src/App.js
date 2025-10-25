@@ -8,6 +8,7 @@ import './styles/media.css';
 
 //компоненти
 import NavBar from "./components/NavBar/NavBar";
+import Footer from "./components/Footer/Footer";
 
 
 //сторінки
@@ -39,7 +40,7 @@ function App() {
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
-        
+        <Footer />
       </div>
     </BrowserRouter>
   );

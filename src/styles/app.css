@@ -319,23 +319,27 @@ body {
 
 .mapSection {
     background-color: rgb(248, 231, 196);
-    height: 70vh;
     width: 100%;
     padding: 60px 0;
-    margin: 0;
+
+}
+
+.mapWrapper {
+    display: flex;
+    justify-content: space-around;
 }
 
 .mapTitleBlock {
     padding-top: 30px;
     padding-bottom: 10px;
-    background-color: rgb(251, 242, 225);
-    width: 50%;
-    margin: auto ;
- 
-    border-radius: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin:  auto;
+margin-bottom: 3rem;
 }
 
 .mapTitle {
+    border-top: #704833 2px solid;
     text-align: center;
     font-family: 'Playfair Display', serif;
     font-size: 4rem;
@@ -348,22 +352,119 @@ body {
     font-size: 1.5rem;
     color: #89634E;
     margin-bottom: 10px;
+    border-bottom: #704833 2px solid;
 }
 
-.mapDescription {
+
+
+.infoCard {
     text-align: center;
-    font-size: 1.2rem;
-    color: #353535;
-    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fbf2e1;
+   
+    border-radius: 10px;
+    padding: 30px;
+    width: 20%;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    color: #4b2e1a;
+    font-size: 1.5rem;
+    justify-content: space-between;
+}
+
+.infoCard p{
+    border-bottom: #846f64 1px solid;
+}
+
+.mapTitleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+
 }
 
 .mapMap {
     width: 100%;
-    height: 100%;
+    height: 300px;
     border: none;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* ==================================== */
-/* 6.         ФУТЕР(FOOTER)             */
-/* ==================================== */
 
+/* ==================================== */
+/* 7. БАЗОВИЙ КОНТЕЙНЕР (FOOTER) */
+/* ==================================== */
+.footer {
+    background-color: rgb(62, 35, 16);
+    color: #F8F3E7;
+    padding: 40px 0;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.footerContent {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+
+.footerTitle {
+    font-size: 1.4rem;
+    color: #F8F3E7;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 10px;
+
+}
+
+
+.footerSection {
+    width: 30%;
+}
+
+.footerSocials {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+
+.footerSocialLink {
+    color: #F8F3E7;
+    text-decoration: none;
+    font-size: 2rem;
+    transition: color 0.3s ease;
+}
+
+.footerSocialLink:hover {
+    color: #aeaa9f;
+}
+
+.footerBottom {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 1px solid rgba(248, 243, 231, 0.2);
+    padding-top: 20px;
+}
+
+.footerCopy {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+
+
+
+.footerAddress,
+.footerHours {
+    line-height: 1.6;
+    margin: 0;
+
+}

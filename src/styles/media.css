@@ -172,3 +172,113 @@
         font-size: 1.5rem;
     }
 }
+
+/*@media (max-width: 768px) {
+  .mapTitle {
+    font-size: 2.2rem;
+  }
+
+  .mapSubTitle {
+    font-size: 1.2rem;
+  }
+
+  .mapDescription {
+    font-size: 1rem;
+  }
+
+  .mapContainer {
+    width: 95%;
+  }
+
+  .mapTitleBlock{
+    width: 95%;
+  }
+
+  .mapMap{
+    width: 100%;
+    height: 250px;
+  }
+}*/
+
+/* 🟤 Адаптивність для планшетів (до 992px) */
+@media (max-width: 992px) {
+  .mapWrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .infoCard {
+    width: 60%;
+    font-size: 1.2rem;
+  }
+
+  .mapTitleBlock {
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+
+  .mapMap {
+    height: 400px;
+  }
+}
+
+/* 🟠 Адаптивність для мобільних (до 768px) */
+@media (max-width: 768px) {
+  .mapSection {
+    padding: 40px 10px;
+  }
+
+  .mapWrapper {
+    gap: 1.5rem;
+  }
+
+  .infoCard {
+    width: 85%;
+    padding: 20px;
+    font-size: 1rem;
+  }
+
+  .mapTitle {
+    font-size: 2.5rem;
+  }
+
+  .mapSubTitle {
+    font-size: 1.2rem;
+  }
+
+  .mapMap {
+    height: 300px;
+  }
+}
+
+/* 🟡 Дуже малі екрани (до 480px) */
+@media (max-width: 480px) {
+  .mapTitle {
+    font-size: 2rem;
+  }
+
+  .mapSubTitle {
+    font-size: 1rem;
+  }
+
+  .infoCard {
+    width: 95%;
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+
+  .infoCard p {
+    border-bottom: none;
+    margin-bottom: 0.5rem;
+  }
+
+  .mapMap {
+    height: 250px;
+  }
+
+  .mapTitleBlock {
+    width: 95%;
+  }
+}
+
