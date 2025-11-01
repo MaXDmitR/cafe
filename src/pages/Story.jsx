@@ -1,9 +1,10 @@
 import React from 'react'
+import OurStory from '../components/Story/OurStory'
 
 const Story = () => {
   return (
-    <div>
-      
+    <div className='storyPage'>
+      <OurStory></OurStory>
     </div>
   )
 }

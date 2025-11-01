@@ -6,7 +6,7 @@ import Map from '../components/Map/Map'
 
 const Home = () => {
   return (
-    <div>
+    <div className='homePage'>
       <Hero></Hero>
       <AboutUs></AboutUs>
       <BestDeal></BestDeal>

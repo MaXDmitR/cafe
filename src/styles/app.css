@@ -8,13 +8,22 @@
 
 html {
     scroll-behavior: smooth;
+
 }
 
 body {
     padding: 0;
     margin: 0;
     font-family: "Lora", serif;
-    color: #6B4F4F
+    color: #6B4F4F;
+
+}
+
+
+strong {
+    background: linear-gradient(120deg, #e7c7a2 0%, #f0d7b4 100%);
+    padding: 0 5px;
+    border-radius: 3px;
 }
 
 /* ==================================== */
@@ -136,61 +145,52 @@ body {
 /* ==================================== */
 
 
-
-
 .aboutSection {
     background-color: rgb(248, 231, 196);
-    display: flex;
-    flex-wrap: wrap;
-    /* Дозволяє блокам переноситися на мобільних пристроях */
-    align-items: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 150px;
-
+    padding: 60px 75px;
 }
 
-
+.aboutContentWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    /* Гарантуємо, що він займає всю доступну ширину контейнера */
+    align-items: stretch;
+    width: 100%;
+}
 
 .aboutImage {
-
-    width: 40%;
-    height: 100vh;
+    width: 55%;
+    min-height: 100%;
     background-position: center;
     background-size: cover;
     border-radius: 10px;
 }
 
-.aboutContent {
-    width: 50%;
-    padding: 40px 60px;
+.aboutDesc {
+    width: 45%;
+    padding: 0 60px;
     color: #353535;
     text-align: left;
 }
 
 .aboutTitle {
     color: #704833;
-    /* Колір заголовка 'About us' */
     font-family: 'Playfair Display', serif;
     margin-bottom: 20px;
 }
 
-.aboutContent h1 {
+.aboutDesc h1 {
     font-size: 4.5rem;
     margin-bottom: 20px;
 }
 
-.aboutContent p {
-    font-size: 1.4rem;
+.aboutDesc p {
+    font-size: 1.2rem;
     line-height: 1.6;
     margin-bottom: 20px;
 }
 
-.aboutContent strong {
-    background: linear-gradient(120deg, #e7c7a2 0%, #f0d7b4 100%);
-    padding: 0 5px;
-    border-radius: 3px;
-}
+
 
 .aboutQuote {
     font-style: italic;
@@ -207,6 +207,8 @@ body {
     text-align: right;
 }
 
+
+
 /* ==================================== */
 /* 5.     КРАЩИЙ ВИБІР(BEST DEAL)       */
 /* ==================================== */
@@ -215,13 +217,15 @@ body {
     background-color: #f9f0e2;
     /*background-color: rgb(245, 232, 211);*/
     height: auto;
-    padding: 40px 150px;
+    padding: 40px 75px;
+
 
 }
 
 .bestDealtitleBlock {
     display: flex;
     justify-content: space-between;
+    align-items: stretch;
 }
 
 .categoryButton {
@@ -273,12 +277,12 @@ body {
     font-weight: 800;
     font-size: 1.1rem;
     color: #89634E;
+    text-align: right;
 }
 
 .bestDealImage {
-
     width: 40%;
-    height: 65vh;
+    min-height: 100%;
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -296,7 +300,6 @@ body {
 }
 
 .bestDealInfoButton {
-    /* Основний стиль */
     background-color: #704833;
     color: #F9F5EF;
     border: none;
@@ -320,77 +323,132 @@ body {
 .mapSection {
     background-color: rgb(248, 231, 196);
     width: 100%;
-    padding: 60px 0;
-
+    padding: 80px 75px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .mapWrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    width: 100%;
+
 }
 
+
+.mapTitleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 65%;
+
+}
+
+
 .mapTitleBlock {
-    padding-top: 30px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin:  auto;
-margin-bottom: 3rem;
+    padding: 0 20px;
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
 .mapTitle {
     border-top: #704833 2px solid;
     text-align: center;
     font-family: 'Playfair Display', serif;
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 700;
     color: #704833;
+    margin-bottom: 10px;
 }
 
 .mapSubTitle {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: #89634E;
-    margin-bottom: 10px;
     border-bottom: #704833 2px solid;
-}
-
-
-
-.infoCard {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    background-color: #fbf2e1;
-   
-    border-radius: 10px;
-    padding: 30px;
-    width: 20%;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
-    color: #4b2e1a;
-    font-size: 1.5rem;
-    justify-content: space-between;
-}
-
-.infoCard p{
-    border-bottom: #846f64 1px solid;
-}
-
-.mapTitleContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 30px;
-
+    padding-bottom: 5px;
 }
 
 .mapMap {
     width: 100%;
-    height: 300px;
+    height: 400px;
     border: none;
     border-radius: 20px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
 }
+
+.mapMap:hover {
+    transform: scale(1.02);
+}
+
+
+.infoCard {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 25%;
+    justify-content: space-between;
+}
+
+
+.stat-card {
+    padding: 25px;
+    border-radius: 12px;
+    background-color: #FFFBF7;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.stat-card::after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #89634E;
+    box-shadow: 0 0 0 5px #8a67542c;
+}
+
+.stat-card-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 50px;
+}
+
+.stat-count {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #89634E;
+    margin-right: 15px;
+}
+
+.stat-label {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    line-height: 1.2;
+}
+
+.stat-label-line-1,
+.stat-label-line-2 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #333;
+}
+
+
 
 
 /* ==================================== */
@@ -399,7 +457,7 @@ margin-bottom: 3rem;
 .footer {
     background-color: rgb(62, 35, 16);
     color: #F8F3E7;
-    padding: 40px 0;
+    padding: 40px 75px;
     font-size: 1rem;
     display: flex;
     flex-direction: column;
@@ -407,22 +465,17 @@ margin-bottom: 3rem;
 
 
 .footerContent {
-    width: 80%;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
 }
-
 
 .footerTitle {
     font-size: 1.4rem;
     color: #F8F3E7;
     font-family: 'Playfair Display', serif;
     margin-bottom: 10px;
-
 }
-
 
 .footerSection {
     width: 30%;
@@ -433,7 +486,6 @@ margin-bottom: 3rem;
     gap: 15px;
     align-items: center;
 }
-
 
 .footerSocialLink {
     color: #F8F3E7;
@@ -459,12 +511,111 @@ margin-bottom: 3rem;
     margin: 0;
 }
 
-
-
-
 .footerAddress,
 .footerHours {
     line-height: 1.6;
     margin: 0;
 
+}
+
+/* ==================================== */
+/* 8. Історія (STORY) */
+/* ==================================== */
+
+.storySection {
+    background-color: #F9F0E2;
+
+}
+
+.storyTitleBlock {
+padding-top: 64px;
+    background-color: rgb(248, 231, 196);
+    min-height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+}
+
+.storyTitle {
+    font-family: 'Playfair Display', serif;
+    color: #704833;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.storyTitle h1 {
+    text-transform: uppercase;
+    font-size: 4rem;
+    line-height: 1.1;
+    margin: 0;
+}
+
+.storyTitleImage {
+    width: 65%;
+    background-position: bottom;
+    background-size: cover;
+}
+
+
+.storyPar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+    background-color: #f9f0e2;
+}
+
+.storyParImage {
+    width: 35%;
+    background-position: bottom;
+    background-size: cover;
+    min-height: 100%;
+}
+
+.storyParText {
+    width: 65%;
+    padding: 40px 60px;
+    color: #353535;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.storySlogan {
+    background-color: rgb(248, 231, 196);
+    min-height: 400px; 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+}
+
+.storySloganText{
+    font-family: 'Playfair Display', serif;
+    color: #704833;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.storySloganText p {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    line-height: 1.1;
+    margin: 0 40px;
+}
+
+.storySloganImage {
+    width: 65%;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.storyPar.reverse {
+  flex-direction: row-reverse; 
 }

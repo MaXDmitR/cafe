@@ -1,35 +1,25 @@
 import React from 'react'
 import Location from './Location'
 import TitleBlock from './TitleBlock'
-import { FaCar, FaWalking } from "react-icons/fa";
-import { MdDirectionsBike } from "react-icons/md";
+import StatCard from './StatCard';
 
 const Map = () => {
   return (
     <section className='mapSection'>
+        <div className="mapWrapper">
+          <div className='mapTitleContainer'>
+            <TitleBlock />
+            <Location />
+          </div>
 
-
-      <div className="mapWrapper">
-        <div className="infoCard">
-          <h3>Visit Us</h3>
-          <p>Mon–Fri: 8:00 – 21:00</p>
-          <p>Sat–Sun: 9:00 – 23:00</p>
-          <p>📞 +380 67 123 45 67</p>
-          <p>📍 Kyiv, Coffee St 12</p>
+          <div className="infoCard">
+            <StatCard count={34} labelLine1="Coffees" labelLine2="Served Daily" />
+            <StatCard count={12} labelLine1="Pastries" labelLine2="Baked Daily" />
+            <StatCard count={8} labelLine1="Seating" labelLine2="Areas Available" />
+            
+          </div>
         </div>
-
-        <div className='mapTitleContainer'>
-          <TitleBlock />
-          <Location />
-        </div>
-
-        <div className="infoCard">
-          <h3>How to Get Here</h3>
-            <p><FaWalking /> 5 min from Center</p>
-            <p><FaCar /> Free Parking</p>
-            <p><MdDirectionsBike /> Bike Friendly</p>
-        </div>
-      </div>
+      
     </section>
   )
 }
