@@ -528,7 +528,7 @@ strong {
 }
 
 .storyTitleBlock {
-padding-top: 64px;
+    padding-top: 64px;
     background-color: rgb(248, 231, 196);
     min-height: 400px;
     display: flex;
@@ -545,6 +545,8 @@ padding-top: 64px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+  
 }
 
 .storyTitle h1 {
@@ -554,11 +556,7 @@ padding-top: 64px;
     margin: 0;
 }
 
-.storyTitleImage {
-    width: 65%;
-    background-position: bottom;
-    background-size: cover;
-}
+
 
 
 .storyPar {
@@ -586,14 +584,14 @@ padding-top: 64px;
 
 .storySlogan {
     background-color: rgb(248, 231, 196);
-    min-height: 400px; 
+    min-height: 400px;
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
     width: 100%;
 }
 
-.storySloganText{
+.storySloganText {
     font-family: 'Playfair Display', serif;
     color: #704833;
     width: 35%;
@@ -617,5 +615,24 @@ padding-top: 64px;
 }
 
 .storyPar.reverse {
-  flex-direction: row-reverse; 
+    flex-direction: row-reverse;
+}
+
+
+#storyTitleCarousel {
+    width: 65%; 
+    
+}
+
+#storyTitleCarousel .carousel-item {
+    height: 100%;
+    min-height: 400px; 
+    background-position: center;
+    background-size: cover;
+    
+}
+
+/*ЦЕ ЗРОБИЛО МІЙ БЛОК ТРОХИ ВУЖЧИМ. НЕ ОБОВЯЗКОВО ПОВТОРБВАТИ*/
+#storyTitleCarousel .carousel-inner {
+  flex: 1; 
 }
