@@ -13,9 +13,9 @@ const Map = () => {
           </div>
 
           <div className="infoCard">
-            <StatCard count={34} labelLine1="Coffees" labelLine2="Served Daily" />
-            <StatCard count={12} labelLine1="Pastries" labelLine2="Baked Daily" />
-            <StatCard count={8} labelLine1="Seating" labelLine2="Areas Available" />
+            <StatCard count={34} label="Coffees Served Daily"  />
+            <StatCard count={12} label="Pastries Baked Daily"  />
+            <StatCard count={8} label="Seating Areas Available"  />
             
           </div>
         </div>

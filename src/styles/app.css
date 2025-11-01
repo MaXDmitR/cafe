@@ -441,11 +441,11 @@ strong {
     line-height: 1.2;
 }
 
-.stat-label-line-1,
-.stat-label-line-2 {
-    font-size: 1.1rem;
+.statLabel {
+    font-size: 1.3rem;
     font-weight: 500;
     color: #333;
+
 }
 
 
@@ -546,7 +546,7 @@ strong {
     justify-content: center;
     align-items: center;
 
-  
+
 }
 
 .storyTitle h1 {
@@ -565,6 +565,16 @@ strong {
     align-items: stretch;
     width: 100%;
     background-color: #f9f0e2;
+    min-height: 450px;
+    
+}
+
+.storyParText.border-right {
+    border-right: #5c3c2e 10px solid;
+}
+
+.storyParText.border-left {
+    border-left: #5c3c2e 10px solid;
 }
 
 .storyParImage {
@@ -572,13 +582,22 @@ strong {
     background-position: bottom;
     background-size: cover;
     min-height: 100%;
+   
+}
+
+.storyParImage.round-top-left {
+    border-top-left-radius: 20px;
+}
+
+.storyParImage.round-bottom-right {
+    border-bottom-right-radius: 20px;
 }
 
 .storyParText {
     width: 65%;
     padding: 40px 60px;
     color: #353535;
-    font-size: 1.2rem;
+    font-size: 1.2rem; /*?*/
     line-height: 1.8;
 }
 
@@ -620,19 +639,22 @@ strong {
 
 
 #storyTitleCarousel {
-    width: 65%; 
-    
+    width: 65%;
+
 }
 
 #storyTitleCarousel .carousel-item {
     height: 100%;
-    min-height: 400px; 
+    min-height: 400px;
     background-position: center;
     background-size: cover;
-    
+    background-repeat: no-repeat;
+
 }
 
-/*ЦЕ ЗРОБИЛО МІЙ БЛОК ТРОХИ ВУЖЧИМ. НЕ ОБОВЯЗКОВО ПОВТОРБВАТИ*/
+/*ЦЕ ЗРОБИЛО МІЙ БЛОК ТРОХИ ВУЖЧИМ. НЕ ОБОВЯЗКОВО ПОВТОРЮВАТИ*/
 #storyTitleCarousel .carousel-inner {
-  flex: 1; 
+    flex: 1;
 }
+
+
