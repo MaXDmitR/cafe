@@ -566,7 +566,7 @@ strong {
     width: 100%;
     background-color: #f9f0e2;
     min-height: 450px;
-    
+
 }
 
 .storyParText.border-right {
@@ -582,7 +582,7 @@ strong {
     background-position: bottom;
     background-size: cover;
     min-height: 100%;
-   
+
 }
 
 .storyParImage.round-top-left {
@@ -597,7 +597,8 @@ strong {
     width: 65%;
     padding: 40px 60px;
     color: #353535;
-    font-size: 1.2rem; /*?*/
+    font-size: 1.2rem;
+    /*?*/
     line-height: 1.8;
 }
 
@@ -658,3 +659,77 @@ strong {
 }
 
 
+/* ==================================== */
+/* 9. Галерея (GALLERY) */
+/* ==================================== */
+
+
+.gallerySection {
+    padding-top: 80px;
+    background-color: rgb(248, 231, 196);
+    height: auto;
+
+}
+
+
+.galleryImage {
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+  margin: 20px;
+}
+
+.galleryImage img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  transition: transform 0.4s ease, filter 0.3s ease;
+}
+
+.galleryImage:hover img {
+  transform: scale(1.08);
+  
+}
+
+
+
+.galleryImage img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.4s ease;
+}
+
+.galleryImage:hover img {
+    transform: scale(1.1);
+}
+
+.my-masonry-grid {
+    display: flex;
+    width: auto;
+}
+
+.my-masonry-grid_column {
+    background-clip: padding-box;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0.15));
+    color: #fff;
+    display: flex;
+    align-items: flex-end; 
+    justify-content: flex-start;
+    padding: 16px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    border-radius: 0 0 10px 10px; /* закруглення тільки знизу (за потреби) */
+}
+
+.galleryImage:hover .overlay {
+    opacity: 1;
+}
