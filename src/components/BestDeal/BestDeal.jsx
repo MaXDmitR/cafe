@@ -18,6 +18,9 @@ const BestDeal = () => {
         }
     }
 
+
+    
+
     return (
         <section className='bestDealSection'>
             

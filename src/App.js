@@ -9,6 +9,7 @@ import './styles/media.css';
 //компоненти
 import NavBar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Footer";
+import ScrollToTop from "./components/scrollToTop.jsx";
 
 
 //сторінки
@@ -24,6 +25,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
+        <ScrollToTop/>
         <NavBar buttons={[
           { name: 'HOME', link: "/" },
           { name: 'STORY', link: "/story" },

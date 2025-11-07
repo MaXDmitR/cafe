@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, {useState} from 'react'
 import Masonry from "react-masonry-css";
 import GalleryData from '../../database/gallery.json'
 import GalleryImage from './GalleryImage';
@@ -13,6 +13,7 @@ const GallerySection = () => {
 
     const [galleryData] = useState(GalleryData)
 
+    
 
     return (
         <section className='gallerySection'>
@@ -24,10 +25,10 @@ const GallerySection = () => {
                 columnClassName="my-masonry-grid_column"
             >
                 {galleryData.map((image, index) => (
-                    <GalleryImage key={index} image={image.url} desc={image.desc}></GalleryImage>
-                    ))}
+                    <GalleryImage key={index} image={image.url} desc={image.desc} ></GalleryImage>
+                ))}
 
-                
+
 
 
             </Masonry>

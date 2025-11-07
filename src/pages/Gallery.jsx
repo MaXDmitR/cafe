@@ -5,11 +5,11 @@ import GallerySection from '../components/Gallery/GallerySection'
 
 const Gallery = () => {
   return (
-    <div>
-      
-      <GallerySection />
 
-    </div>
+
+    <GallerySection />
+
+
   )
 }
 

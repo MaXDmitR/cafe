@@ -26,6 +26,18 @@ strong {
     border-radius: 3px;
 }
 
+
+.fadeIn {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s ease-out;
+}
+
+.fadeIn.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* ==================================== */
 /* 2. НАВІГАЦІЯ (NAVBAR) */
 /* ==================================== */
@@ -668,6 +680,7 @@ strong {
     padding-top: 80px;
     background-color: rgb(248, 231, 196);
     height: auto;
+    min-height: 100vh;
 
 }
 
@@ -733,3 +746,6 @@ strong {
 .galleryImage:hover .overlay {
     opacity: 1;
 }
+
+
+

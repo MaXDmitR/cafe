@@ -1,11 +1,32 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import ReadMoreButton from './ReadMoreButton'
 
 const AboutDesc = () => {
-    return (
-        <div className="aboutDesc">
+    const titleRef = useRef(null)
 
-            <h1 className="aboutTitle">About us</h1>
+    useEffect(() => {
+
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+
+                        entry.target.classList.add('visible')
+                        observer.unobserve(entry.target)
+                    }
+                })
+            }
+            , { threshold: 0.1 })
+
+        observer.observe(titleRef.current)
+
+    }, [])
+
+    return (
+        <div className="aboutDesc" >
+
+            <h1 className="aboutTitle fadeIn" ref={titleRef}>About us</h1>
 
             <p><strong>AromaPlace</strong> is a cosy, family-friendly coffee shop created with love and inspired by our community. We wanted to create a space where you would feel at home: a place where <strong>real coffee</strong>, nutritious food and sincere communication come together.</p>
 
