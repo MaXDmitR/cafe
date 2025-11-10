@@ -1,12 +1,24 @@
 import React from 'react'
 import StoryParText from './StoryParText'
 import TitleCarousel from './TitleCarousel'
+import { useAnimatedInView } from '../../hooks/useAnimatedInView'
 
 const OurStory = () => {
+
+const { ref, classNames } = useAnimatedInView({
+        direction: 'top',
+        timer: 500,
+        threshold: 0.1,
+        triggerOnce: true,
+        animationSpeed: '0.5s',
+        animationDistance: '0'
+    })
+
   return (
     <section className='storySection'>
+
       <div className='storyTitleBlock'>
-        <div className='storyTitle'>
+        <div ref={ref} className={`storyTitle ${classNames}`}>
           <h1>AROMAPLACE</h1>
           <p>Crafted Coffee & Cozy Moments</p>
         </div>

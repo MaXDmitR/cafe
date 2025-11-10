@@ -17,8 +17,6 @@ const GallerySection = () => {
 
     return (
         <section className='gallerySection'>
-
-
             <Masonry
                 breakpointCols={breakpointColumnsObj}
                 className="my-masonry-grid"
@@ -27,9 +25,6 @@ const GallerySection = () => {
                 {galleryData.map((image, index) => (
                     <GalleryImage key={index} image={image.url} desc={image.desc} ></GalleryImage>
                 ))}
-
-
-
 
             </Masonry>
         </section>
