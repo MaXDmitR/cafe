@@ -8,12 +8,13 @@ export const useAnimatedInView = ({
     threshold = 0.1,
     triggerOnce = true,
     animationSpeed = '1s',
-    animationDistance = '30px',
+    animationDistance = '0',
 }) => {
+
     const [activateObserver, setActivateObserver] = useState(false)
     const domRef = useRef(null)
 
-    
+
     useEffect(() => {
         const t = setTimeout(() => setActivateObserver(true), timer)
         return () => clearTimeout(t)
@@ -25,13 +26,13 @@ export const useAnimatedInView = ({
         skip: !activateObserver,
     })
 
-    
+
     const setRefs = (el) => {
         domRef.current = el
         inViewRef(el)
     }
 
-    
+
     const classNames = useMemo(() => {
         let base = 'fadeIn'
         base += ` ${direction}`
@@ -45,6 +46,8 @@ export const useAnimatedInView = ({
             domRef.current.style.setProperty('--animationDistance', animationDistance)
         }
     }, [animationSpeed, animationDistance])
+
+    
 
     return { ref: setRefs, inView, classNames }
 }

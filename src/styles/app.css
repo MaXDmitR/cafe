@@ -28,33 +28,34 @@ strong {
 
 
 .fadeIn.bottom {
-  opacity: 0;
-  transform: translateY(var(--animationDistance, 30px));
-  transition: all var(--animationSpeed, 1s) ease-out;
+    opacity: 0;
+    transform: translateY(var(--animationDistance, 0px));
+    transition: all var(--animationSpeed, 1s) ease-out;
+    
 }
 
 .fadeIn.top {
-  opacity: 0;
-  transform: translateY(var(--animationDistance, -30px));
-  transition: all var(--animationSpeed, 1s) ease-out;
+    opacity: 0;
+    transform: translateY(var(--animationDistance, -0px));
+    transition: all var(--animationSpeed, 1s) ease-out;
 }
 
 .fadeIn.left {
-  opacity: 0;
-  transform: translateX(var(--animationDistance, -30px));
-  transition: all var(--animationSpeed, 1s) ease-out;
+    opacity: 0;
+    transform: translateX(var(--animationDistance, -0px));
+    transition: all var(--animationSpeed, 1s) ease-out;
 }
 
 .fadeIn.right {
-  opacity: 0;
-  transform: translateX(var(--animationDistance, 30px));
-  transition: all var(--animationSpeed, 1s) ease-out;
+    opacity: 0;
+    transform: translateX(var(--animationDistance, 0px));
+    transition: all var(--animationSpeed, 1s) ease-out;
+    
 }
 
 .fadeIn.visible {
-  opacity: 1;
-  transform: translateY(0);
-  transform: translateX(0);
+    opacity: 1;
+    transform: translateY(0) translateX(0);
 }
 
 
@@ -698,7 +699,8 @@ strong {
 
 
 .gallerySection {
-    padding-top: 80px; /*80px*/
+    padding-top: 80px;
+    /*80px*/
     background-color: rgb(248, 231, 196);
     height: auto;
     min-height: 100vh;
@@ -707,11 +709,11 @@ strong {
 
 
 .galleryImage {
-  overflow: hidden;
-  border-radius: 10px;
-  position: relative;
-  margin: 20px;
-  
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    margin: 20px;
+
 }
 
 
@@ -740,22 +742,19 @@ strong {
     left: 0;
     bottom: 0;
     width: 100%;
-    background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0.15));
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.15));
     color: #fff;
     display: flex;
-    align-items: flex-end; 
+    align-items: flex-end;
     justify-content: flex-start;
     padding: 16px;
     box-sizing: border-box;
     opacity: 0;
     transition: opacity 0.3s ease, transform 0.3s ease;
-    border-radius: 0 0 10px 10px; /* закруглення тільки знизу (за потреби) */
+    border-radius: 0 0 10px 10px;
+   
 }
 
 .galleryImage:hover .overlay {
     opacity: 1;
 }
-
-
-
-
