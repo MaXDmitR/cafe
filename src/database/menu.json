@@ -3,7 +3,7 @@
     "id": "americano_classic",
     "name": "Americano",
     "category": "Espresso-based",
-    "imageUrl": "images/sales/americano.jpg",
+    "imageUrl": "https://res.cloudinary.com/daiacamks/image/upload/f_auto/Americano_ox8km3.jpg",
     "bestDeal": false,
     "bestDealTitle": "Americano: Pure Coffee Essence",
     "descriptionSections": [
@@ -39,7 +39,7 @@
     "id": "americano_classic",
     "name": "Capuccino",
     "category": "Espresso-based",
-    "imageUrl": "images/sales/Capuccino.jpg",
+    "imageUrl": "https://res.cloudinary.com/daiacamks/image/upload/f_auto/Capuccino_mujwa5.jpg",
     "bestDeal": true,
     "bestDealTitle": "Cappuccino: Pure Coffee Essence",
     "descriptionSections": [
@@ -75,7 +75,7 @@
     "id": "herbal_tea_dream",
     "name": "Dreamy Garden Herbal Tea",
     "category": "Hot drinks",
-    "imageUrl": "images/sales/DreamyGardenHerbalTea.jpg",
+    "imageUrl": "https://res.cloudinary.com/daiacamks/image/upload/f_auto/DreamyGardenHerbalTea_slbn8d.jpg",
     "bestDeal": true,
     "bestDealTitle": "Dreamy Garden Herbal Tea",
     "descriptionSections": [
@@ -110,7 +110,7 @@
     "id": "chocolate_brownie",
     "name": "Chocolate Brownie",
     "category": "Desserts",
-    "imageUrl": "images/sales/ChocolateBrownie.jpg",
+    "imageUrl": "https://res.cloudinary.com/daiacamks/image/upload/f_auto/ChocolateBrownie_bcjslu.jpg",
     "bestDeal": true,
     "bestDealTitle": "Chocolate Brownie",
     "descriptionSections": [

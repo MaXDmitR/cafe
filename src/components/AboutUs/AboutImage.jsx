@@ -18,7 +18,7 @@ const { ref, classNames } = useAnimatedInView({
         <div
             ref = {ref}
             className={`aboutImage ${classNames}`}
-            style={{ backgroundImage: "url('images/aboutUs.jpg')" }}
+            style={{ backgroundImage: "url(https://res.cloudinary.com/daiacamks/image/upload/f_auto/about_wkbmf5.jpg)" }}
             aria-label="Затишний інтер'єр кав'ярні"
         >
         </div>

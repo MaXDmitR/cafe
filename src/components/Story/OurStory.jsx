@@ -21,7 +21,7 @@ const OurStory = () => {
       </div>
 
       <StoryParText
-        image="images/story7.jpg"
+        image="https://res.cloudinary.com/daiacamks/image/upload/f_auto/story7_aywzgg.jpg"
         title="The birth of an idea"
         text={[<p>Our founder,  <strong>little Tom</strong>, grew up in a house where the <strong>aroma of coffee</strong> was always in the air. His grandfather, a former sailor, brought <strong>exotic beans from distant countries</strong>, and his grandmother knew how to brew a drink that ‘opened up the world.</p>,
         <p>Tom, still a child, decided that his ‘coffee’ had to be <strong>special</strong>. Every summer, he set up an <strong>improvised counter in the garden</strong>, selling ‘refreshing drinks’ to his neighbours. One hot day, when all the sugar bowls were empty and regular coffee seemed too bitter, Tom <strong>accidentally mixed</strong> his grandfather's cold drink with his grandmother's secret ingredient — <strong>a drop of natural, barely noticeable honey syrup</strong>.</p>]}
@@ -31,7 +31,7 @@ const OurStory = () => {
       />
 
       <StoryParText
-        image="images/story5.jpg"
+        image="https://res.cloudinary.com/daiacamks/image/upload/f_auto/story5_ep5vix.jpg"
         title="Brand philosophy"
         text={[<p>When Tom grew up, he devoted himself to creating the <strong>perfect place</strong> where this childhood magic could happen every day. He named his brainchild <strong>AromaPlace</strong> to <strong>honour that very ‘aroma’</strong> from his childhood and to <strong>emphasise that here, not only taste but also atmosphere is valued</strong>.</p>,
         <p>Today at AromaPlace, <strong>every cup is prepared with the same precision</strong> as that first experimental drink. The secret of <strong>‘Golden Warmth’</strong> is not an ingredient, but a <strong>philosophy: real coffee should always bring joy and a feeling of home</strong>.</p>]}
@@ -43,7 +43,7 @@ const OurStory = () => {
       <div className='storySlogan'>
         <div
           className="storySloganImage"
-          style={{ backgroundImage: "url('images/story6.jpg')" }}
+          style={{ backgroundImage: "url('https://res.cloudinary.com/daiacamks/image/upload/f_auto/story6_r0cjbq.jpg')" }}
           aria-label="Затишний інтер'єр кав'ярні"
         >
         </div>

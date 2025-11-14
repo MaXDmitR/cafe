@@ -14,11 +14,11 @@ const TitleCarousel = () => {
                 <button type="button" data-bs-target="#storyTitleCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div className="carousel-inner">
-                <div className="carousel-item active" style={{ backgroundImage: "url('images/unnamed (11).jpg')" }}>
+                <div className="carousel-item active" style={{ backgroundImage: "url('https://res.cloudinary.com/daiacamks/image/upload/f_auto/unnamed_11_sacrsy.jpg')" }}>
                 </div>
-                <div className="carousel-item" style={{ backgroundImage: "url('images/unnamed (7).jpg')" }}>
+                <div className="carousel-item" style={{ backgroundImage: "url('https://res.cloudinary.com/daiacamks/image/upload/f_auto/unnamed_7_tq1xq6.jpg')" }}>
                 </div>
-                <div className="carousel-item" style={{ backgroundImage: "url('images/unnamed (8).jpg')" }}>
+                <div className="carousel-item" style={{ backgroundImage: "url('https://res.cloudinary.com/daiacamks/image/upload/f_auto/unnamed_8_qgtnqc.jpg')" }}>
                 </div>
             </div>
             <button className="carousel-control-prev" type="button" data-bs-target="#storyTitleCarousel" data-bs-slide="prev">
